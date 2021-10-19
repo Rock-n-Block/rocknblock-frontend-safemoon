@@ -47,5 +47,6 @@ export interface OtherSitesI {
     img: string;
     alt: string;
     title: string;
+    href: string;
 }
 

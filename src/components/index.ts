@@ -16,3 +16,5 @@ export { default as SocialInput } from './input/socialInput';
 export { default as HowTokensWork } from './how-tokens-work';
 export { default as Benefits } from './benefits';
 export { default as Blockchain } from './blockchain-network';
+export { default as HowToSet } from './how-to-set';
+export { default as OtherSites} from './other-sites';
