@@ -1,0 +1,122 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.blockchain {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+
+  @include b('tablet') {
+    margin-top:80px;
+  }
+
+  @include b('mobile') {
+    margin-top:50px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 60%;
+    
+    @include b('tablet') {
+      width: 95%;
+    }
+
+    @include b('mobile') {
+      width: 95%;
+    }
+
+
+    h2 {
+      font-family: TT Norms, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    
+  }
+
+  &__cards-container {
+    overflow-x: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 93px;
+
+    @include b('tablet') {
+      margin-top: 50px;
+      
+    }
+
+    @include b('mobile') {
+      margin-top: 20px;
+
+    }
+  }
+
+  &__card-container {
+    flex: 1 1 auto;
+    position: relative;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 20px;
+    width: 200px;
+    min-width: 200px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #2C2C33;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-family: TT Norms, sans-serif;
+      margin-top: 42px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+        height: 100%;
+        font-family: TT Norms, sans-serif;
+        font-style: normal;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        opacity: 0.5;
+        text-align: center;
+    }
+
+  }
+
+  &__card-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+  }
+
+  
+}
