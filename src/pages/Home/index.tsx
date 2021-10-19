@@ -4,7 +4,7 @@ import {useCallback, useEffect, useState} from 'preact/hooks';
 import {
     ContactUs,
     UpButton,
-    TelegramWidget,  About,
+    TelegramWidget,  About, WhatAreTokens
 } from "../../components";
 
 const HomePage: FunctionalComponent = () => {
@@ -32,7 +32,7 @@ const HomePage: FunctionalComponent = () => {
             <TelegramWidget />
             {isActive ? <UpButton /> : null}
             <About />
-            
+            <WhatAreTokens />
             <ContactUs title={'Get Live Technical Demo'} />
         </div>
     )
