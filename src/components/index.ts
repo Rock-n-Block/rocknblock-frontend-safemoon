@@ -13,3 +13,4 @@ export { default as WhatAreTokens } from './what-are-tokens';
 export { default as About} from './about';
 export { default as Input } from './input';
 export { default as SocialInput } from './input/socialInput';
+export { default as HowTokensWork } from './how-tokens-work';
