@@ -1,0 +1,172 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.benefits {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 80px;
+  overflow-x: clip;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  position: relative;
+
+  @include b('tablet') {
+    margin-top:80px;
+  }
+
+  @include b('mobile') {
+    margin-top:50px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 60%;
+    
+    @include b('tablet') {
+      width: 95%;
+    }
+
+    @include b('mobile') {
+      width: 95%;
+    }
+
+
+    h2 {
+      font-family: TT Norms, sans-serif;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      @include b('mobile') {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-family: TT Commons, sans-serif;
+      width: 90%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.9;
+      @include b('tablet') {
+        width: 95%;
+      }
+      @include b('mobile') {
+        width: 95%;
+      }
+/* or 150% */
+
+      text-align: center;
+    }
+  }
+
+  &__cards-container {
+    overflow-x: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 93px;
+
+    @include b('tablet') {
+      margin-top: 50px;
+      
+    }
+
+    @include b('mobile') {
+      margin-top: 20px;
+
+    }
+  }
+
+  &__card-container {
+    flex: 1 1 auto;
+    position: relative;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+    width: 340px;
+    min-width: 340px;
+    height: 333px;
+    background: linear-gradient(30.15deg, #000000 14.13%, #272525 79.31%);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-family: TT Commons,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 22px;
+      opacity: 0.8;
+
+      @include b('tablet') {
+        order: 2;
+        font-size: 15px;
+        line-height: 21px;
+      
+      }
+      
+      @include b('mobile') {
+        order: 2;
+        font-size: 15px;
+        line-height: 21px;
+        
+      }
+      
+    }
+  }
+
+  &__card-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @include b('tablet') {
+      flex-direction:row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @include b('mobile') {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__bg {
+    
+    position: absolute;
+    top: -500px;
+    max-width:100%;
+    z-index: -1;
+    
+    
+    @include b('tablet') {
+      top: -300px;
+      left: auto;
+      transform: scale(2);
+
+    }
+    @include b('mobile') {
+      top: -100px;
+      left: auto;
+      transform: scale(2);
+    }
+
+  }
+
+  
+}

@@ -14,3 +14,4 @@ export { default as About} from './about';
 export { default as Input } from './input';
 export { default as SocialInput } from './input/socialInput';
 export { default as HowTokensWork } from './how-tokens-work';
+export { default as Benefits } from './benefits';
