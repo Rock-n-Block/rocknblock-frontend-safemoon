@@ -9,9 +9,12 @@ export { default as TelegramWidget } from './telegram-widget';
 export { default as Terms } from './terms';
 export { default as ThanksContainer } from './thanks-container';
 export { default as UpButton } from './up-button';
-
-
+export { default as WhatAreTokens } from './what-are-tokens';
 export { default as About} from './about';
-
 export { default as Input } from './input';
 export { default as SocialInput } from './input/socialInput';
+export { default as HowTokensWork } from './how-tokens-work';
+export { default as Benefits } from './benefits';
+export { default as Blockchain } from './blockchain-network';
+export { default as HowToSet } from './how-to-set';
+export { default as OtherSites} from './other-sites';
