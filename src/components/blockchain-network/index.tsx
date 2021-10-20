@@ -1,10 +1,6 @@
 import {FunctionalComponent, h} from 'preact';
 import style from './style.scss';
-import cardFirst from '../../assets/img/safemoon.png';
-import cardSecond from '../../assets/img/vanilla.png';
-import cardThird from '../../assets/img/spore.png';
-import cardFour from '../../assets/img/sake.png';
-import cardFifth from '../../assets/img/yfdai.png';
+
 interface ICard {
     icon: string;
     text: string;
@@ -13,26 +9,26 @@ interface ICard {
 const Blockchain: FunctionalComponent = () => {
     const dataCards: Array<ICard> = [
         {
-          icon: cardFirst,
+          icon: '../../assets/img/safemoon.png',
           text: 'SAFEMOON',
         },
         {
-          icon: cardSecond,
+          icon: '../../assets/img/vanilla.png',
           text: 'VANILLA NETWORK',
           subtitle: 'VNLA'
         },
         {
-          icon: cardThird,
+          icon: '../../assets/img/spore.png',
           text: 'SPORE',
           subtitle: 'SPORE'
         },
         {
-          icon: cardFour,
+          icon: '../../assets/img/sake.png',
           text: 'SAKE TOKEN',
           subtitle: 'SAKE'
         },
         {
-          icon: cardFifth,
+          icon: '../../assets/img/yfdai.png',
           text: 'YFDAI.Finance',
           subtitle: 'YF-DAI'
         },

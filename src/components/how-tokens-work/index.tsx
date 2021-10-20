@@ -1,13 +1,12 @@
 import {FunctionalComponent, h} from 'preact';
 import style from './style.scss';
-import fireImg from '../../assets/img/fire.png';
 const HowTokensWork: FunctionalComponent = () => {
     
     return (
         <div className={style.tokens}>
             <div className={style['tokens__title-wrapper']}>
                 <h2>How deflationary tokens work</h2>
-                <img width="300" height="239" src={fireImg} alt='' />
+                <img width="300" height="239" src='../../assets/img/fire.png' alt='' />
             </div>
 
             <div className={style['tokens__main-container']}>
